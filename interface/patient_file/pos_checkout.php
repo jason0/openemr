@@ -25,6 +25,13 @@
 // (5) Receipt printing must be a separate operation from payment,
 //     and repeatable.
 
+// Mods: 
+// by jason brooks
+// changed addBilling function call to hard code "auth" setting.
+// subsequent database mods needed: 
+// update billing set authorized='1' where code_type like "copay" and authorized = '0'
+//
+
 
 // TBD:
 // If this user has 'irnpool' set
